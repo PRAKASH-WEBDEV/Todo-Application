@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE TODO LIST </title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        background: linear-gradient(135deg, #8052ec, #d161ff);
+    }
+  .container{
+    border: 2px solid white;
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    min-width: 450px;
+    padding:  20px 30px;
+        
+    }
+    .newtask{
+        position: relative;
+       background-color: white;
+       padding: 30px 20px;
+       border-radius: 5px;
+       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+    }
+    .newtask input{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-family: poppins, sans-serif;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        border: 2px solid #d1d3d4;
+        padding: 12px;
+        color: #111111;
+        font-weight: 500;
+        position: relative;
+    }
+    .newtask button{
+        position: absolute;
+        right: 23px;
+        top: 33px;
+        padding: 10px 15px;
+        background-color: #8052ec;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: poppins, sans-serif;
+    }
+    #tasks{
+        width: 100%;
+        margin-top: 60px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+  .delete {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+    .tasked{
+        background-color: white;
+        height: 50px;
+        padding: 5px 10px;
+        margin-top: 10px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #d1d3d4;
+        cursor: pointer;
+    }
+    .completed{
+        text-decoration: line-through;
+        color: #111111;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="newtask">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button id="push">Add Task</button>
+
+        </div>
+        <div id="tasks"></div>
+
+    </div>
+  
+</body>
+<script src="pro02.js"></script>
+</html>
